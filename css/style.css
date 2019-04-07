@@ -1,19 +1,45 @@
+@font-face {
+    font-family: 'misobold';
+    src: url('../fonts/miso-bold-webfont.woff2') format('woff2'),
+         url('../fonts/miso-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'misolight';
+    src: url('../fonts/miso-light-webfont.woff2') format('woff2'),
+         url('../fonts/miso-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #fdde7e;
+}
+
 .grid{
     width: 1200px;
-    margin: 0 auto;
-    background-color: #fdde7e;
+    margin: 0 auto; 
 }
 
 .more-cofe{
     display: flex;
     justify-content: center;
     width: 100%;
+    padding-top: 100px;
 }
 
 .cofe{
@@ -21,5 +47,39 @@
     flex-direction: column;
     align-items: center;
     margin-right: 30px;
+    padding: 0 103px;
     background-color: #fff;
+}
+
+.cofe:hover{
+    padding-top: 30px;
+    padding-bottom: 55px;
+}
+
+.cofe__price{
+    padding-top: 40px;
+    padding-bottom: 15px;
+    font-size: 70px;
+    font-family: 'misobold';
+    font-weight: 700;
+    color: #02995b;
+}
+
+.cofe__quality{
+    padding-top: 45px;
+    padding-bottom: 35px;
+    font-family: 'misolight';
+    font-size: 56px;
+    font-weight: 300;
+}
+
+.cofe__description{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: center;
+    padding-bottom: 35px;
+    font-size: 20px;
 }
